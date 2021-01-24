@@ -5,4 +5,5 @@
     <ul>
       <li>After a few days  trying to figure that out, I think I finally got it!</li>
     </ul>
-  <li>Understanding where JS comes into play using HTML. It's a little bit of a learning curve because I haven't taken the Creative Coding course.</li> 
+  <li>Understanding where JS comes into play using HTML. It's a little bit of a learning curve because I haven't taken the Creative Coding course.</li>
+  </ol>
