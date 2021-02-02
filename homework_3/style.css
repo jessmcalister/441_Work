@@ -1,0 +1,15 @@
+body{
+  font-family: Verdana, Arial, Tahoma;
+  font-size: 12px;
+  background-color: #FBEEC1;
+}
+.intro{
+  color: #659DBD;
+  position: relative;
+  text-align: center;
+  font-size: 2.75em;
+  font-family: monospace;
+}
+.sabrina{
+  text-align: center;
+}

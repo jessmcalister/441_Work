@@ -2,69 +2,69 @@ function storyFunction(choice) {
     var answer1 = document.getElementById("choice1").innerHTML;
     var answer2 = document.getElementById("choice2").innerHTML;
     if (choice == 1 && answer1 == "Yes") {
-        document.getElementById("story").innerHTML = "Pugster continues into the park with confidence. Pugster meets another dog. What Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Meet others";
-        document.getElementById("choice2").innerHTML = "Walk alone";
+        document.getElementById("story").innerHTML = "Sabrina is asked to go on a date with Tyler to a hockey game or with Henry to a symphony concert. Which does she choose?";
+        document.getElementById("choice1").innerHTML = "Hockey game";
+        document.getElementById("choice2").innerHTML = "Symphony concert";
     } else if (choice == 2 && answer2 == "No") {
-        document.getElementById("story").innerHTML = "Pugster starts to back out, but then something in the back of Pugster's mind says 'Wait!'";
-        document.getElementById("choice1").innerHTML = "Go ahead and be brave";
-        document.getElementById("choice2").innerHTML = "Scan the situation";
-    } else if (choice == 1 && answer1 == "Meet others") {
-        document.getElementById("story").innerHTML = "Pugster walks over to a group of dogs and says hello.  Pugster is trying to decide who is genuine or not.";
-        document.getElementById("choice1").innerHTML = "Evaluate all dogs";
-        document.getElementById("choice2").innerHTML = "Stay clear";
-    } else if (choice == 2 && answer2 == "Walk alone") {
-        document.getElementById("story").innerHTML = "Pugster starts to walk over to the dogs and then decides to go to the water instead.  Now what?'";
-        document.getElementById("choice1").innerHTML = "Go for a swim";
-        document.getElementById("choice2").innerHTML = "Get a drink";
-    } else if (choice == 1 && answer1 == "Go ahead and be brave") {
-        document.getElementById("story").innerHTML = "Pugster decides to go in even with hesitation to make new friends.  Will it work?'";
-        document.getElementById("choice1").innerHTML = "Yes it will work";
-        document.getElementById("choice2").innerHTML = "No it will not work";
-    } else if (choice == 2 && answer2 == "Scan the situation") {
-        document.getElementById("story").innerHTML = "Pugster decides to just look around for the moment. What should Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Watch from afar";
-        document.getElementById("choice2").innerHTML = "Get in closer";
+        document.getElementById("story").innerHTML = "Sabrina starts to feel like she might enjoy the hockey game. Does she cancel on Henry and go with Tyler?";
+        document.getElementById("choice1").innerHTML = "Cancel and go with Tyler";
+        document.getElementById("choice2").innerHTML = "Stay with Henry";
+    } else if (choice == 1 && answer1 == "Hockey game") {
+        document.getElementById("story").innerHTML = "Tyler asks if he can walk her home after the game. She senses he might want to ask her a question at the end of the night.";
+        document.getElementById("choice1").innerHTML = "Say yes.";
+        document.getElementById("choice2").innerHTML = "Say you like walking alone.";
+    } else if (choice == 2 && answer2 == "Symphony concert") {
+        document.getElementById("story").innerHTML = "Henry tells Sabrina she looks beautiful and holds out his hand.";
+        document.getElementById("choice1").innerHTML = "Take his hand.";
+        document.getElementById("choice2").innerHTML = "Act like you need something out of your purse.";
+    } else if (choice == 1 && answer1 == "Cancel and go with Tyler") {
+        document.getElementById("story").innerHTML = "Henry asks why you canceled. Should you tell him?";
+        document.getElementById("choice1").innerHTML = "Yes, honesty is the best policy.";
+        document.getElementById("choice2").innerHTML = "No, he'll want to end things.";
+    } else if (choice == 2 && answer2 == "Stay with Henry") {
+        document.getElementById("story").innerHTML = "Tyler asks to come over later that night. Do you let him?";
+        document.getElementById("choice1").innerHTML = "No, Henry might want to come over.";
+        document.getElementById("choice2").innerHTML = "Yes, you get to hangout with two crushes in one night.";
     }
     // need to do these
-    else if (choice == 1 && answer1 == "Evaluate all dogs") {
-        document.getElementById("story").innerHTML = "Pugster decides that evaluation is the best option." + "<br>Restart?";
+    else if (choice == 1 && answer1 == "Hockey game") {
+        document.getElementById("story").innerHTML = "Tyler asks you to be his girlfriend. Do you say yes?" + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Stay clear") {
-        document.getElementById("story").innerHTML = "Pugster decides staying away is the best option" + "<br>Restart?";
+    } else if (choice == 2 && answer2 == "Say you like walking alone") {
+        document.getElementById("story").innerHTML = "Tyler is hurt and wants to end things." + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Go for a swim") {
-        document.getElementById("story").innerHTML = "Pugster decides that swimming sounds most fun" + "<br>Restart?";
+    } else if (choice == 1 && answer1 == "Take his hand") {
+        document.getElementById("story").innerHTML = "Henry asks you to be his girlfrined. Do you say yes?" + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Get a drink") {
-        document.getElementById("story").innerHTML = "Pugster decides it's time to drink" + "<br>Restart?";
+    } else if (choice == 2 && answer2 == "Act like you need something from your purse.") {
+        document.getElementById("story").innerHTML = "Henry is hurt and wants to stop seeing you." + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Yes it will work") {
-        document.getElementById("story").innerHTML = "Pugster thinks, yeah this will work out." + "<br>Restart?";
+    } else if (choice == 1 && answer1 == "Yes, honesty is the best policy.") {
+        document.getElementById("story").innerHTML = "Henry is hurt and wants to end things." + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "No it will not work") {
-        document.getElementById("story").innerHTML = "Pugster thinks, I don't think this will work out." + "<br>Restart?";
+    } else if (choice == 2 && answer2 == "No, he'll want to end things") {
+        document.getElementById("story").innerHTML = "Henry is confused and ends things." + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Watch from afar") {
-        document.getElementById("story").innerHTML = "Pugster decides it's time to just watch from a distance for safety." + "<br>Restart?";
+    } else if (choice == 1 && answer1 == "No, Henry might want to come over.") {
+        document.getElementById("story").innerHTML = "Henry asks you to be his girlfriend." + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Get in closer") {
-        document.getElementById("story").innerHTML = "Pugster decides to get just a little closer, but not engage." + "<br>Restart?";
+    } else if (choice == 2 && answer2 == "Yes, you get to hangout with two crushes in one night.") {
+        document.getElementById("story").innerHTML = "Henry comes over and sees Tyler. He breaks things off." + "<br>Restart?";
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
     } else if (choice == 1 && answer1 == "Yes restart") {
-        document.getElementById("story").innerHTML = "Our fearless leader, 'Pugster' has entered the dog park for the first time. Scared? Yes, but willing to give it a try. Are you ready to start on adventure with Pugster?";
+        document.getElementById("story").innerHTML = "Sabrina hasn't found love yet. Are you willing to help her?";
         document.getElementById("choice1").innerHTML = "Yes";
         document.getElementById("choice2").innerHTML = "No";
     } else if (choice == 2 && answer2 == "No quit") {
-        document.getElementById("story").innerHTML = "Pugster thanks you!";
+        document.getElementById("story").innerHTML = "Maybe one day she'll find love!";
 
     }
 
