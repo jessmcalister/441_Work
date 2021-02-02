@@ -1,0 +1,2 @@
+<h1>Homework 2</h1>
+<p>My struggles this week is correlated to learning JavaScript without having the experience in Creative Coding 1. Since I didn't take that course, everything about JavaScript is new. I handled HTML and CSS pretty well, and am excited to start feeling more comfortable with JavaScript. I've taken a course on Visual Basic, so some of these ideas about variables and functions I'm familiar with. But, it's been awhile since I've taken that class. However, I'm hopeful that it will be like riding a bike and I can get back into it!</p>
