@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <head lang="en-US">
+      <meta charset="UTF-8">
+      <meta name="author" content="Jessica McAlister">
+      <meta name="description" content="Homework 4"
+      <meta name="viewport" content="width=device-width,intial-scale=1.0">
+      <title>Homework 4</title>
+      <style>body{background-color: yellow;}</style>
+      <title>Sabrina's Love</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="main.js"></script>
+    </head>
+    <body>
+      <div class ="sabrina">
+        <img src="./images/sabrina.jpg" height="300" width="295">
+      </div>
+      <label id="lblYN">Yes or No?</label><br>
+      <input id="txtYN" type="text"><br>
+      <button id="btnSubmit" onclick="getYN();">Submit</button><br>
+       <script>
+          function getYN()
+          {var currentYN = document.getElementById("txtYN").value;
+              document.getElementById("lblYN").innerHTML = currentName;}
+      </script>
