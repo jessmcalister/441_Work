@@ -29,10 +29,16 @@
                 document.getElementById("btnSubmit2").style.display="block";
 
 
-                myQuestion.innerHTML = "The Kiss cam is on you two! Do you kiss him or stuff your face with popcorn?";
+                myQuestion.innerHTML = "The Kiss-Cam is on you two! Do you kiss him or stuff your face with popcorn?";
             }
             else if(myChoice === "Henry")
             {
+              document.getElementById("choice").style.display="block";
+              document.getElementById("btnSubmit").style.display="blcok";
+
+              document.getElementById("choice2").style.display="none";
+              document.getElementById("btnSubmit2").style.display="none";
+
                 myQuestion.innerHTML = "A slow dance comes on! Do you dance with him or run to the bathroom?";
 
             }
@@ -61,21 +67,21 @@
         <br>
     <div id="question">
     <br>
-        On Friday night, Tyler asked Sabrina to go to a baseball game with him.
+        On Friday night, Tyler asks Sabrina to go to a baseball game with him.
         <br>
-        That same night, Henry asked Sabrina to go to a concert with her.
+        That same night, Henry asks Sabrina to go to a concert with her.
         <br>
         Who does she choose? Tyler or Henry?
     </div>
 
         <br>
-        <input type="text" size="30" id="choice" value="Please enter Tyler or Hnery">
+        <input type="text" size="30" id="choice" value="Please enter Tyler or Henry">
         <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
 
-        <input type="text" size="30" id="choice2" value="Enter kiss or popcorn." style="display:none">
+        <input type="text" size="30" id="choice2" value="Enter kiss or popcorn" style="display:none">
         <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
 
-        <input type="text" size="30" id="choice3" value="Enter dance or run."  style="display:none">
+        <input type="text" size="30" id="choice3" value="Enter dance or run"  style="display:none">
         <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
     </body>
 </html>
