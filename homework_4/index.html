@@ -54,11 +54,48 @@
             var myQuestion = document.getElementById("question");
             if(cam === "kiss")
             {
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+                myQuestion.innerHTML = "That was the best!";
+            }
+            else if(food === "popcorn")
+            {
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+                myQuestion.innerHTML = "I should have gone with Henry!";
+            }
+        }
+        function getChoice3()
+        {
+            var cam = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(cam === "dance")
+            {
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
                 myQuestion.innerHTML = "That was the best!";
             }
             else if(food === "run")
             {
-                myQuestion.innerHTML = "I should have gone with Henry!";
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+                myQuestion.innerHTML = "I should have gone with Tyler!";
             }
         }
     </script>
