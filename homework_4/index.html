@@ -6,26 +6,70 @@
       <meta name="description" content="Homework 4"
       <meta name="viewport" content="width=device-width,intial-scale=1.0">
       <title>Homework 4</title>
-      <style>body{background-color: yellow;}</style>
       <title>Sabrina's Love</title>
       <link rel="stylesheet" href="style.css">
       <script src="main.js"></script>
     </head>
     <body>
+      <style>body{background-color: yellow;}</style>
+      <script>
+        function getChoice1()
+        {
+          var myChoice = document.getElementById("choice").value;
+          var myQuestion = document.getElementById("question");
+          if(myChoice === "Tyler")
+          {
+            document.getElementById("choice").style.display="none";
+            documnet.getElementById("btnSumbit").style.display="none";
+
+            document.getElementById("choice2").style.display="block";
+            documnet.getElementById("btnSumbit2").style.display="block";
+
+            myQuestion.innerHTML = "You're on the kiss cam! Do you kiss him or stuff your face with popcorn?";
+          }
+          else if(myChoice === "Henry")
+          {
+            myQuestion.innerHTML = "There's a slow song! Do you dance with him or run to the bathroom?";
+          }
+          else
+          {
+            myQuestion.innerHTML = "Invalid response!";
+          }
+        }
+        function getChoice2()
+        var cam = document.getElementById("choice2").value;
+        var myQuestion = document.getElementById("question");
+        if(cam === "kiss")
+        {
+          myQuestion.innerHTML = "That kiss what great!";
+        }
+        else if(cam === "run")
+        {
+          myQuestion.innerHTML = "That was a close one!";
+        }
+        </script>
+      <div class ="header">
+        <h1>Is he the one?</h1>
+        <br>
       <div class ="sabrina">
         <img src="./images/sabrina.jpg" height="300" width="295">
       </div>
       <br>
-      <div id="story">
-        Sabrina has crushes on two guys. How can she decide between Henry, the musician, or Tyler, the jock? Who is her greatest love match? Are you ready to help her find true love?
+      <div id="question">
+        Sabrina has crushes on two guys. How can she decide between Henry, the musician, or Tyler, the jock?
+        <br>
+        On Friday night, Henry asks her to go to a concert with him.
+        <br>
+        The same night, Tyler asks her to go to a baseball game with him.
+        <br>
+         Who does she choose? Henry or Tyler?
       </div>
       <br>
-      <label id="lblYN">Yes or No?</label><br>
-      <input id="txtYN" type="text"><br>
-      <button id="btnSubmit" onclick="getYN();">Submit</button><br>
-       <script>
-          function getYN()
-          {var currentYN = document.getElementById("txtYN").value;
-              document.getElementById("lblYN").innerHTML = currentYN;}
-      </script>
-      
+    <input type="text" size="30" id="choice" value="Please enter Tyler or Henry">
+    <button id="btnSubmit" onclick="getChoice1();"> Click to Continue"</button>
+
+    <input type="text" size="30" id="choice2" value="Please enter kiss or popcorn" style="display:none">
+    <button id="btnSubmit2" onclick="getChoice2();" style="display:none"> Click to Continue"</button>
+
+    <input type="text" size="30" id="choice3" value="Please enter dance or run" style="display:none">
+    <button id="btnSubmit3" onclick="getChoice3();" style="display:none"> Click to Continue"</button>
