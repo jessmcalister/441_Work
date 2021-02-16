@@ -27,6 +27,7 @@ body{
 	background-color: #4333FF;
 	display: table-footer-group;
 	font-weight: bold;
+  format: center;
 }
 .divTableBody {
 	display: table-row-group;
