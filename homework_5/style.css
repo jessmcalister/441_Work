@@ -7,6 +7,9 @@ body{
 	width: 100%;
   text-align: center;
 }
+.header {
+  text-align: center;
+}
 .divTableRow {
 	display: table-row;
   text-align: center;
