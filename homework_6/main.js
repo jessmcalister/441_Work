@@ -21,7 +21,6 @@ function printBlanks()
     // iterate through the image tag ids and sets the source
         document.getElementById(imageNames[i]).src= blankImagePath;
     }
-
 }
 
 function createRandomImageArray()
@@ -30,7 +29,6 @@ function createRandomImageArray()
     var actualImagePath = ["images/snake.jpg", "images/dumb.jpg", "images/monstera.png", "pearl.jfif", "wondering.jpg"];
     // create another array to make sure the images only get added twice
     var count = [0,0];
-    // create a while statement to check to see if our actual image array is full
     while(actualImages.length < 4)
     {
         // get a random number between 0 and the number total number of images that we can choose from
@@ -54,7 +52,7 @@ function flipImage(number)
         secondNumber = number;
         document.getElementById(imageNames[number]).src = actualImages[secondNumber];
     }
-    else if(firstNumber < 0) // make the first image appear
+    else if(firstNumber < 0)
     {
         firstNumber = number;
         document.getElementById(imageNames[firstNumber]).src= actualImages[firstNumber];
