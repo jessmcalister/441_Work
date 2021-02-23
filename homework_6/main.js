@@ -1,5 +1,5 @@
-var imageNames = ["image1", "image2", "image3", "image4"];
-var blankImagePath = "images/gofish.jpg";
+var imageNames = ["image1", "image2", "image3", "image4,", "image5", "image6", "image7", "image8", "image9", "image10"];
+var blankImagePath = "images/question.jpg";
 var firstNumber = -1;
 var secondNumber = -1;
 var score = 0;
@@ -81,7 +81,7 @@ function flipImage(number)
         {
             player.score = score;
             localStorage.setItem("playerInfo", JSON.stringify(player));
-            window.location = "HWExampleEnd.html";
+            window.location = "indexEnd.html";
         }
     }
 }
@@ -107,7 +107,7 @@ function addToPlayer()
     player.lastname = lastName;
     player.age = age;
     localStorage.setItem("playerInfo", JSON.stringify(player));
-    window.location = "HWExample.html";
+    window.location = "index.html";
 }
 
 // get the information out of JSON
