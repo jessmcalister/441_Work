@@ -48,7 +48,6 @@ function createRandomImageArray()
 
 function flipImage(number)
 {
-
     // make the second image appear
     if(firstNumber >= 0)
     {
@@ -59,7 +58,6 @@ function flipImage(number)
     {
         firstNumber = number;
         document.getElementById(imageNames[firstNumber]).src= actualImages[firstNumber];
-
     }
 
     // check to see if the images do not match
@@ -121,7 +119,4 @@ function playerInfo()
     {
         document.getElementById("endInformation").innerHTML = str;
     }
-
-
 }
-© 2021 GitHub, Inc.
